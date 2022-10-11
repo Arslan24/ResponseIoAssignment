@@ -1,0 +1,212 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-11T22:12:31.023Z",
+        "line": 3,
+        "name": "Users are able to search for an item using the search bar",
+        "description": "",
+        "id": "-when-i-go-to-the-home-page--and-search-for-an-item--i-expect-to-see-some-reference-to-that-item-in-the-result-summary.-;users-are-able-to-search-for-an-item-using-the-search-bar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13017000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is navigate to homePage",
+            "match": {
+              "location": "stepDefination.SearchItemSteps.the_user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 408000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user type the \"Printed Chiffon Dress\" in the search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Chiffon Dress\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefination.SearchItemSteps.the_user_searched_Item(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3815000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on the search Icon",
+            "match": {
+              "location": "stepDefination.SearchItemSteps.search_Click()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4754000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"PRINTED CHIFFON DRESS\" dress displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PRINTED CHIFFON DRESS\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefination.SearchItemSteps.validate_search_Results(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-11T22:12:53.154Z",
+        "line": 16,
+        "name": "Users are able to filter search results under Women category by Color and Category",
+        "description": "",
+        "id": "-when-i-go-to-the-home-page--and-search-for-an-item--i-expect-to-see-some-reference-to-that-item-in-the-result-summary.-;users-are-able-to-filter-search-results-under-women-category-by-color-and-category;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is navigate to homePage",
+            "match": {
+              "location": "stepDefination.SearchItemSteps.the_user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4302000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click on \"WOMEN\" category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WOMEN\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefination.SearchItemSteps.click_Category(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 486000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user select any value from the \u0027Yellow\u0027 and \u0027Dresses\u0027 filter item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Yellow\u0027",
+                  "offset": 31
+                },
+                {
+                  "val": "\u0027Dresses\u0027",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefination.SearchItemSteps.choose_Category(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Validate that the results returned matches the filter criteria",
+            "match": {
+              "location": "stepDefination.SearchItemSteps.validate_filters_Applied()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-11T22:12:58.043Z",
+        "line": 24,
+        "name": "Users are able to view the details of any clothing item from the POPULAR section and add them to the cart",
+        "description": "",
+        "id": "-when-i-go-to-the-home-page--and-search-for-an-item--i-expect-to-see-some-reference-to-that-item-in-the-result-summary.-;users-are-able-to-view-the-details-of-any-clothing-item-from-the-popular-section-and-add-them-to-the-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is navigate to homePage",
+            "match": {
+              "location": "stepDefination.SearchItemSteps.the_user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4498000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user Select any item from from the \u0027Blouse\u0027 section and add them to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Blouse\u0027",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefination.AddToCartSteps.item_add_to_Cart(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validate that the item has successfully been added to the cart",
+            "match": {
+              "location": "stepDefination.AddToCartSteps.validate_match_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "\u0027When I go to the home page, and search for an item, I expect to see some reference to that item in the result summary.\u0027",
+    "description": "",
+    "id": "-when-i-go-to-the-home-page--and-search-for-an-item--i-expect-to-see-some-reference-to-that-item-in-the-result-summary.-",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/01SearchItem.feature",
+    "tags": []
+  }
+]
